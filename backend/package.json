@@ -1,0 +1,36 @@
+{
+  "name": "bolt-website-backend",
+  "version": "1.0.0",
+  "description": "Backend for Bolt Website",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "start-dev": "node start-dev.js",
+    "train-model": "node src/scripts/trainModel.js"
+  },
+  "dependencies": {
+    "axios": "^1.9.0",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "express-validator": "^7.2.1",
+    "ffmpeg-static": "^5.2.0",
+    "fft.js": "^4.0.3",
+    "form-data": "^4.0.2",
+    "jsonwebtoken": "^9.0.2",
+    "mathjs": "^12.3.0",
+    "microsoft-cognitiveservices-speech-sdk": "^1.43.1",
+    "mongoose": "^8.14.2",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "natural": "^8.0.1",
+    "node-wav": "^0.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
