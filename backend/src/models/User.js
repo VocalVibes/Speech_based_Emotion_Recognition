@@ -54,11 +54,9 @@ userSchema.methods.comparePassword = async function(candidatePassword) {
   return bcrypt.compare(candidatePassword, this.password);
 };
 
-// Add indexes for frequently queried fields
-userSchema.index({ email: 1 });
-userSchema.index({ username: 1 });
+// Keep only necessary additional indexes
 userSchema.index({ role: 1 });
 userSchema.index({ 'profile.specialty': 1 });
 
 const User = mongoose.model('User', userSchema);
-export default User; 
+export default User;

@@ -78,10 +78,7 @@ app.use((err, req, res, next) => {
 const startServer = async () => {
   try {
     console.log('Connecting to MongoDB...');
-    await mongoose.connect(MONGODB_URI, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true
-    });
+    await mongoose.connect(MONGODB_URI);
     console.log('Connected to MongoDB successfully');
     
     let port = Number(process.env.PORT) || 50021;
